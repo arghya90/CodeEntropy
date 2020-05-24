@@ -10,10 +10,10 @@ two popular MD packages, GROMACS and CHARMM.
 Download the git repository and run the following commands.
 ```
 cd dist
-tar -xvzf CodeEntropy-0.0.0.tar.gz
+tar -xvzf CodeEntropy-XXX.tar.gz
 ```
 
-Locate the folder with the file `setup.py`. CD to that folder and type
+`XXX` is the version number of the package. Locate the folder with the file `setup.py`. CD to that folder and type
 ```
 pip install -e .
 ```
