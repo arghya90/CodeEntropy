@@ -18,4 +18,7 @@ tar -xvzf CodeEntropy-XXX.tar.gz
 pip install -e .
 ```
 
-
+##### Fixes and improvments:
+In the order best gathered from memory, the following changes have been madeto the code over time through different versions.
+1. dihedral double counting is fixed. it solves overestimation of UA-topo entropy. In addition, phi-psi categorization of BB dihedral was introduced.
+2. A bug with defining rotational axes system for UA beads using hydrogen-atom position in conjunciton with spherical geometry approach is fixed. This showed that aromatic residues have lower rotational entropy (comparable to expected values for liquids).
