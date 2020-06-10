@@ -22,3 +22,6 @@ pip install -e .
 In the order best gathered from memory, the following changes have been madeto the code over time through different versions.
 1. dihedral double counting is fixed. it solves overestimation of UA-topo entropy. In addition, phi-psi categorization of BB dihedral was introduced.
 2. A bug with defining rotational axes system for UA beads using hydrogen-atom position in conjunciton with spherical geometry approach is fixed. This showed that aromatic residues have lower rotational entropy (comparable to expected values for liquids).
+3. creation of an exclusive file that contains all the CONSTANTS.
+4. Removal of `makemodule.sh` file.
+5. Can read CHARMM topology and trajectory (coordinate/forces) and a separate executable for charmm inputs is now available.
