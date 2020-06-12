@@ -25,3 +25,5 @@ In the order best gathered from memory, the following changes have been madeto t
 3. creation of an exclusive file that contains all the CONSTANTS.
 4. Removal of `makemodule.sh` file.
 5. Can read CHARMM topology and trajectory (coordinate/forces) and a separate executable for charmm inputs is now available.
+6. TOPO method 2 does both SC and BB entropy calculation, but separately.
+7. Minor changes to DCD reading code.
