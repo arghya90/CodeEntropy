@@ -28,3 +28,4 @@ In the order best gathered from memory, the following changes have been madeto t
 6. TOPO method 2 does both SC and BB entropy calculation, but separately.
 7. Minor changes to DCD reading code.
 8. Minor bugs related to CHARMMREADER/PSFREADER fixed.
+9. CHARMMREADER unit conversion fixed and UnitsAndConversions module modified.
