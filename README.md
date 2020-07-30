@@ -29,4 +29,4 @@ In the order best gathered from memory, the following changes have been madeto t
 7. Minor changes to DCD reading code.
 8. Minor bugs related to CHARMMREADER/PSFREADER fixed.
 9. CHARMMREADER unit conversion fixed and UnitsAndConversions module modified.
-10. Minor bug fix
+10. Minor bug fix in the Gromacs Reader section.
