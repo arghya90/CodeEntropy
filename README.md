@@ -30,3 +30,4 @@ In the order best gathered from memory, the following changes have been madeto t
 8. Minor bugs related to CHARMMREADER/PSFREADER fixed.
 9. CHARMMREADER unit conversion fixed and UnitsAndConversions module modified.
 10. Minor bug fix in the Gromacs Reader section.
+11. Adaptive Enumeration Method (AEM) of computing topographical entropy is introduced. With it some data structures have also been introduced.
