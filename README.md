@@ -46,3 +46,8 @@ In the order best gathered from memory, the following changes have been madeto t
 12. Printing FF/TT Matrices by default to a file with a fixed name is removed and a control is established via ```--mout <filename>``` flag.
 13. Printing NMD format files by default to a set of files, with hierarchy-level dependent names, is removed and a control is established via ```--nmd <filename>``` flag. 
 14. Function returning principal axes matrix is modified to return it such that the axes are in the rows and not in the columns to reconcile with the 4x3 format for coordinate axes used in the rest of the program.
+
+## Citation
+If this code is used to publish a work, please cite this paper:
+Chakravorty A, Higham J, Henchman R, J. Chem. Inf. Model. 2020
+DOI: doi.org/10.1021/acs.jcim.0c00611
