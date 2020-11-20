@@ -19,7 +19,7 @@ pip install -e .
 ```
 
 ### Usage
-The ```CodeEntropy``` python package can be used like as API or via two python scripts which are designed to work with Gromacs and CHARMM files separately. When installing ```codeEntropy``` using the instructions outlined, these scripts are installed as bash executables. Look for
+The ```CodeEntropy``` python package can be used like as API or via two python scripts which are designed to work with Gromacs and CHARMM files separately. When installing ```CodeEntropy``` using the instructions outlined, these scripts are installed as bash executables. Look for
 ```
 mcc_gromacs.py
 ```
@@ -29,6 +29,17 @@ mcc_charmm.py
 ```
 in the installation directory. By default it is placed in ```/usr/local/bin```. If you do not have administrative priviledges, look for these executables in a user-specific local directory.
 
+To run MCC entropy calculations using the `mcc_gromacs.py` executable, type
+```
+mcc_gromacs.py 
+```
+or 
+```
+mcc_gromacs.py --help
+```
+to print the help message.
+
+To use CHARMM generated DCD and PSF files, you will need to use the `mcc_charmm.py` executable. Accordingly type `mcc_charmm.py` or `mcc_charmm.py --help` to print the help message.
 
 ##### Fixes and improvments:
 In the order best gathered from memory, the following changes have been madeto the code over time through different versions.
@@ -46,3 +57,4 @@ In the order best gathered from memory, the following changes have been madeto t
 12. Printing FF/TT Matrices by default to a file with a fixed name is removed and a control is established via ```--mout <filename>``` flag.
 13. Printing NMD format files by default to a set of files, with hierarchy-level dependent names, is removed and a control is established via ```--nmd <filename>``` flag. 
 14. Function returning principal axes matrix is modified to return it such that the axes are in the rows and not in the columns to reconcile with the 4x3 format for coordinate axes used in the rest of the program.
+15. Minor bug fix in Trajectory.PSFReader and improvement in printing HELP message when no input flag is provided in the command line following the executables.
