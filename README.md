@@ -3,10 +3,15 @@
 CodeEntropy is a python package and a collection of scripts 
 that can be used to compute entropy using the multiscale-cell-correlation (MCC) 
 theory and force/torque covariance methods. 
-The package has can be used to read coordinate and force trajectories from 
+The package can be used to read coordinate and force trajectories from 
 two popular MD packages, GROMACS and CHARMM. 
 
+Any questions regarding the code and its ysage can be emailed to:
+Arghya Chakravorty, PhD (arghyac@umich.edu) 
+Richard Henchman, PhD (rhen7213@uni.sydney.edu.au)
+
 ### Installation
+We recommend downloading the latest version of the code (v0.2.3). 
 Download the git repository and run the following commands.
 ```
 cd dist
@@ -57,11 +62,13 @@ In the order best gathered from memory, the following changes have been madeto t
 12. Printing FF/TT Matrices by default to a file with a fixed name is removed and a control is established via ```--mout <filename>``` flag.
 13. Printing NMD format files by default to a set of files, with hierarchy-level dependent names, is removed and a control is established via ```--nmd <filename>``` flag. 
 14. Function returning principal axes matrix is modified to return it such that the axes are in the rows and not in the columns to reconcile with the 4x3 format for coordinate axes used in the rest of the program.
-<<<<<<< HEAD
 15. Minor bug fix in Trajectory.PSFReader and improvement in printing HELP message when no input flag is provided in the command line following the executables.
+16. Minor change in verbosity of print statements in DCDReader.
+17. Atomselection features have been added. Entropy functions now use 'atomselection' features to define cells/beads. Some vestigial functions in `BaseMolecule` class have been removed. A complaint, that kills the run is added when gromacs TRR file is found to contain no force.
+
 =======
 
 ## Citation
-If this code is used to publish a work, please cite this paper:
-Chakravorty A, Higham J, Henchman R, J. Chem. Inf. Model. 2020
+If this code is used to publish a work, please cite:
+Chakravorty A, Higham J, Henchman R, "Entropy of proteins using Multiscale Cell Correlation", J. Chem. Inf. Model. 2020
 DOI: doi.org/10.1021/acs.jcim.0c00611
