@@ -7,11 +7,11 @@ The package can be used to read coordinate and force trajectories from
 two popular MD packages, GROMACS and CHARMM. 
 
 Any questions regarding the code and its ysage can be emailed to:
-Arghya Chakravorty, PhD (arghyac@umich.edu) 
+Arghya Chakravorty, PhD (arghyac@umich.edu)  
 Richard Henchman, PhD (rhen7213@uni.sydney.edu.au)
 
 ### Installation
-We recommend downloading the latest version of the code (v0.2.3). 
+We recommend downloading the latest version of the code (v0.2.4). 
 Download the git repository and run the following commands.
 ```
 cd dist
@@ -65,8 +65,9 @@ In the order best gathered from memory, the following changes have been madeto t
 15. Minor bug fix in Trajectory.PSFReader and improvement in printing HELP message when no input flag is provided in the command line following the executables.
 16. Minor change in verbosity of print statements in DCDReader.
 17. Atomselection features have been added. Entropy functions now use 'atomselection' features to define cells/beads. Some vestigial functions in `BaseMolecule` class have been removed. A complaint, that kills the run is added when gromacs TRR file is found to contain no force.
+18. New atomselection tokens added. Entropy functions cleaned up and optimized.
 
-=======
+____________
 
 ## Citation
 If this code is used to publish a work, please cite:
