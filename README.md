@@ -6,12 +6,16 @@ theory and force/torque covariance methods.
 The package can be used to read coordinate and force trajectories from 
 two popular MD packages, GROMACS and CHARMM. 
 
-Any questions regarding the code and its ysage can be emailed to:
-Arghya Chakravorty, PhD (arghyac@umich.edu)  
+### Contact
+Any questions regarding the code and its usage can be emailed to:
+Arghya Chakravorty, PhD (arghyac@umich.edu)  \
 Richard Henchman, PhD (rhen7213@uni.sydney.edu.au)
 
+### Latest Stable Version
+Version 0.2.7 (20-Aug, 2021)
+
 ### Installation
-We recommend downloading the latest version of the code (v0.2.4). 
+We recommend downloading the latest version of the code. 
 Download the git repository and run the following commands.
 ```
 cd dist
@@ -46,8 +50,15 @@ to print the help message.
 
 To use CHARMM generated DCD and PSF files, you will need to use the `mcc_charmm.py` executable. Accordingly type `mcc_charmm.py` or `mcc_charmm.py --help` to print the help message.
 
-##### Fixes and improvments:
-In the order best gathered from memory, the following changes have been madeto the code over time through different versions.
+## Citation
+If this code is used to publish a work, please cite:
+Chakravorty A, Higham J, Henchman R, **Entropy of proteins using Multiscale Cell Correlation**, *J. Chem. Inf. Model.* 2020
+DOI: doi.org/10.1021/acs.jcim.0c00611
+
+
+### Fixes and improvments:
+In the order best gathered from memory, the following changes have been made to the code over time through different versions. Most recent change is at the bottom of this list and is included in the latest available version.
+
 1. dihedral double counting is fixed. it solves overestimation of UA-topo entropy. In addition, phi-psi categorization of BB dihedral was introduced.
 2. A bug with defining rotational axes system for UA beads using hydrogen-atom position in conjunciton with spherical geometry approach is fixed. This showed that aromatic residues have lower rotational entropy (comparable to expected values for liquids).
 3. creation of an exclusive file that contains all the CONSTANTS.
@@ -66,10 +77,8 @@ In the order best gathered from memory, the following changes have been madeto t
 16. Minor change in verbosity of print statements in DCDReader.
 17. Atomselection features have been added. Entropy functions now use 'atomselection' features to define cells/beads. Some vestigial functions in `BaseMolecule` class have been removed. A complaint, that kills the run is added when gromacs TRR file is found to contain no force.
 18. New atomselection tokens added. Entropy functions cleaned up and optimized.
-
+19. Custom exceptions and clean-ups added for better error handling.
+20. Time and duration printing feature added.
+21. BaseMolecule also stores segment information now. Readers updated accordingly and additional changes have been made. Selection feature expanded, can use SEGI/SEGN (select by segment), BYREsidue, BYSEgid, RESDue now. New selection keywords (like seen in CHARMM) are added. 
 ____________
 
-## Citation
-If this code is used to publish a work, please cite:
-Chakravorty A, Higham J, Henchman R, "Entropy of proteins using Multiscale Cell Correlation", J. Chem. Inf. Model. 2020
-DOI: doi.org/10.1021/acs.jcim.0c00611
