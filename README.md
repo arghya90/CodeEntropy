@@ -12,7 +12,7 @@ Arghya Chakravorty, PhD (arghyac@umich.edu)  \
 Richard Henchman, PhD (rhen7213@uni.sydney.edu.au)
 
 ### Latest Stable Version
-Version 0.3 (DATE ???)
+Version 0.4 (DATE ???)
 
 ### Installation
 We recommend downloading the latest version of the code. 
@@ -81,5 +81,6 @@ In the order best gathered from memory, the following changes have been made to 
 20. Time and duration printing feature added.
 21. BaseMolecule also stores segment information now. Readers updated accordingly and additional changes have been made. Selection feature expanded, can use SEGI/SEGN (select by segment), BYREsidue, BYSEgid, RESDue now. New selection keywords (like seen in CHARMM) are added. 
 22. v0.3: (a) PSFReader has been expanded and a new function to write a PSF has been added. (b)  Atomselection by  SUBSET is now possible and some bugs in selection functions have been fixed. (c) A bug in DCDreader's timestamping has been fixed (d) Minor bug fixes to AtomSelection.
+23. v0.4: Some minor changes to CustomFunctions.py file
 ____________
 
